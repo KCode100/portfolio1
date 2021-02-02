@@ -6,10 +6,14 @@
         <meta name="theme-color" content="#000000" />
         <link rel="shortcut icon" href="./assets/img/codeicon.ico" />
         <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/codeicon.ico" />
-        <!-- <link rel="stylesheet" href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" /> -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+        <link rel="stylesheet" href="./assets/css/style.css">
         <title>Portfolio | Kivi Corn</title>
+        <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script defer src="./assets/js/script.js"></script>        
+        <script defer src="./assets/js/navbar.js"></script>
     </head>
     <body class="text-gray-800 antialiased">
         <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
@@ -50,7 +54,7 @@
                             </a>
                         </li>
                         <li class="flex items-center">
-                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing">
+                            <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#">
                                 <i class="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i> CV
                             </a>
                         </li>
@@ -71,10 +75,10 @@
                     <div class="items-center flex flex-wrap">
                         <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                             <div class="pr-12">
-                                <h1 class="text-white font-semibold text-5xl">
+                                <h1 data-aos="fade-up" class="text-white font-semibold text-5xl">
                                     Hi, my name is Kivi Corn
                                 </h1>
-                                <p class="mt-4 text-3xl text-gray-300">
+                                <p data-aos="fade-right" data-aos-delay="1000" class="mt-4 text-3xl text-gray-300">
                                     I'm a Front-end Web developer
                                 </p>
                             </div>
@@ -87,10 +91,10 @@
                     </svg>
                 </div>
             </div>
-            <section class="pb-20 bg-gray-200 -mt-24">
+            <section class="pb-32 bg-gray-200 -mt-24">
                 <div class="container mx-auto px-4">
                     <div class="flex flex-wrap">
-                        <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                        <div data-aos="fade-right" data-aos-delay="1200" class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
                             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                                 <div class="px-4 py-5 flex-auto">
                                     <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
@@ -103,7 +107,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full md:w-4/12 px-4 text-center">
+                        <div data-aos="fade-up" data-aos-delay="1400" class="w-full md:w-4/12 px-4 text-center">
                             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                                 <div class="px-4 py-5 flex-auto">
                                     <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
@@ -116,7 +120,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+                        <div data-aos="fade-left" data-aos-delay="1600" class="pt-6 w-full md:w-4/12 px-4 text-center">
                             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                                 <div class="px-4 py-5 flex-auto">
                                     <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
@@ -130,12 +134,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-wrap items-center mt-32">
-                        <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                    <div class="flex flex-wrap mt-32 py-20">
+                        <div data-aos="zoom-in-right" class="w-full md:w-5/12 px-4 mr-auto ml-auto">
                             <!-- <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
                                 <i class="fas fa-user-friends text-xl"></i>
                             </div> -->
-                            <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                            <h3 class="heading heading-tertiary">
                                 About me
                             </h3>
                             <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
@@ -145,15 +149,20 @@
                             <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
                                 I’m looking for a team that allows me to perpetually get outside my comfort zone.
                             </p>
-                            <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation" class="font-bold text-gray-800 mt-8">Check Tailwind Starter Kit!</a>
+                            <!-- <a href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation" class="font-bold text-gray-800 mt-8">Check Tailwind Starter Kit!</a> -->
                         </div>
                         <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg bg-grey-300">
-                                <img
+                            <div data-aos="flip-left" data-aos-delay="1000" class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg bg-grey-300">
+                                <!-- <img
                                     alt="..."
                                     src="https://images.unsplash.com/photo-1517148815978-75f6acaaf32c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzl8fHByb2dyYW1tZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                                     class="w-full align-middle"
-                                />
+                                /> -->
+                                <div class="composition">
+                                    <img src="./assets/img/team-1-800x800.jpg" alt="image" class="composition__photo composition__photo--p1">
+                                    <img src="./assets/img/team-2-800x800.jpg" alt="image" class="composition__photo composition__photo--p2">
+                                    <img src="./assets/img/team-3-800x800.jpg" alt="image" class="composition__photo composition__photo--p3">
+                                </div>
                                 <!-- <blockquote class="relative p-8 mb-4">
                                     <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
                                         <polygon points="-30,95 583,95 583,65" class="text-pink-600 fill-current"></polygon>
@@ -171,32 +180,42 @@
                 </div>
             </section>
             <section class="relative py-20">
-                <h2 class="text-center text-5xl mb-12">Portfolio</h2>
+                <!-- <div class="heading">
+                    <h2 class="heading heading-secondary mb-24">Portfolio</h2>
+                </div> -->
                 <div class="container mx-auto px-4">
                     <div class="items-center flex flex-wrap">
-                        <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                        <div data-aos="flip-right" data-aos-delay="400" class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                            <a href="https://kriah.com" target="blank">
+                              <img
+                                alt="..."
+                                class="max-w-full rounded-sm project-img project-img--1"
+                                src="./assets/img/Home _ The Zobin Method.png"/>  
+                            </a>
+                        </div>
+                        <div data-aos="zoom-in-left" class="w-full md:w-5/12 ml-auto mr-auto px-4">
                             <div class="md:pr-12">
                                 <!-- <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
                                     <i class="fas fa-rocket text-xl"></i>
                                 </div> -->
-                                <h3 class="text-3xl font-semibold" style="display: inline;">Kriah.com </h3>
-                                <a href="https://kriah.com" target="blank">
+                                <h3 class="text-3xl font-semibold text-blue-500" style="display: inline;">kriah.com </h3>
+                                <a class="heading heading-tertiary heading-tertiary-link" href="https://kriah.com" target="blank">
                                     <i class="fas fa-link" style="font-size: 20px; margin-left: 10px;"></i>
                                 </a>
-                                <a href="https://github.com/KCode100/kriah.com" target="blank">
+                                <a class="heading heading-tertiary heading-tertiary-link" href="https://github.com/KCode100/kriah.com" target="blank">
                                     <i class="fab fa-github" style="font-size: 20px; margin-left: 10px;"></i>
                                 </a>
                                 <p class="mt-4 text-lg leading-relaxed text-gray-600">
                                     As one of the best rated reading specialist institutions in Israel, I knew something had to be done after discovering that the intsitution's website did not reflect the excellence of success they offer.
                                 </p>
                                 <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                                    This site was transformed from a static template website into a bespoke, dynamic, 20 page website with a mobile first design. It includes many third party developer tools, marketing campaigns, API's and a login system for users to access resources and FAQ's.
+                                    This site was transformed from a static template website into a bespoke, dynamic, 20 page website with a mobile first design. It utilizes third party developer tools, marketing campaigns, API's and includes a login system for users to access resources and FAQ's.
                                 </p>
                                 <ul class="list-none mt-6">
                                     <li class="px-5 inline-block">
                                         <div class="">
                                             <div class = "text-center">
-                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="fab fa-html5"></i></span>
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="heading heading-tertiary heading-tertiary-link fab fa-html5"></i></span>
                                             </div>
                                             <div>
                                                 <h4 class="text-gray-600">
@@ -208,7 +227,7 @@
                                     <li class="px-5 inline-block">
                                         <div class="">
                                             <div class = "text-center">
-                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="fab fa-css3"></i></span>
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="heading heading-tertiary heading-tertiary-link fab fa-css3"></i></span>
                                             </div>
                                             <div>
                                                 <h4 class="text-gray-600">CSS3</h4>
@@ -218,7 +237,7 @@
                                     <li class="px-5 inline-block">
                                         <div class="">
                                             <div class = "text-center">
-                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="fab fa-js"></i></span>
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="heading heading-tertiary heading-tertiary-link fab fa-js"></i></span>
                                             </div>
                                             <div>
                                                 <h4 class="text-gray-600">JavaScript</h4>
@@ -228,7 +247,7 @@
                                     <li class="px-5 inline-block">
                                         <div class="text-center">
                                             <div class = "-ml-16">
-                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="fab fa-php"></i></span>
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-400"><i class="heading heading-tertiary heading-tertiary-link fab fa-php"></i></span>
                                             </div>
                                             <div>
                                                 <h4 class="text-gray-600">PHP</h4>
@@ -238,25 +257,84 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="w-full md:w-6/12 ml-auto mr-auto px-4">
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="relative py-20">
+                <!-- <div class="heading">
+                    <h2 class="heading heading-secondary mb-24">Portfolio</h2>
+                </div> -->
+                <div class="container mx-auto px-4">
+                    <div class="items-center flex flex-wrap">
+                        <div data-aos="zoom-in-left" class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                            <div class="md:pr-12">
+                                <!-- <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                                    <i class="fas fa-rocket text-xl"></i>
+                                </div> -->
+                                <h3 class="text-3xl font-semibold text-blue-500" style="display: inline;">Personal Projects</h3>
+                                <a class="heading heading-tertiary heading-tertiary-link" href="#" target="blank">
+                                    <i class="fas fa-link" style="font-size: 20px; margin-left: 10px;"></i>
+                                </a>
+                                <a class="heading heading-tertiary heading-tertiary-link" href="#" target="blank">
+                                    <i class="fab fa-github" style="font-size: 20px; margin-left: 10px;"></i>
+                                </a>
+                                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                                    A collection of desktop apps which I created using JavaScript and React.js
+                                </p>
+                                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                                    A Kanban board, Paint clone, Bookmarks, Sass projects, Math Sprint game, and more...
+                                </p>
+                                <ul class="list-none mt-6">
+                                    <li class="px-5 inline-block">
+                                        <div class="text-center">
+                                            <div class = "-ml-16">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-500 "><i class="heading heading-tertiary heading-tertiary-link fab fa-sass"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">Sass</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="px-5 inline-block">
+                                        <div class="">
+                                            <div class = "text-center">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-500"><i class="heading heading-tertiary heading-tertiary-link fab fa-js"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">JavaScript</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="px-5 inline-block">
+                                        <div class="">
+                                            <div class = "text-center">
+                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-500"><i class="heading heading-tertiary heading-tertiary-link fab fa-react"></i></span>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-gray-600">React.js</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-aos="flip-left" data-aos-delay="400" class="w-full md:w-5/12 ml-auto mr-auto px-4">
                             <a href="https://kriah.com" target="blank">
                               <img
                                 alt="..."
-                                class="max-w-full rounded-sm shadow-sm"
+                                class="max-w-full rounded-sm project-img project-img--2"
                                 src="./assets/img/Home _ The Zobin Method.png"/>  
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="relative py-20">
+            <!-- <section class="relative py-20">
                 <div class="container mx-auto px-4">
                     <div class="items-center flex flex-wrap">
                         <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
                             <div class="md:pr-12">
-                                <!-- <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
-                                    <i class="fas fa-rocket text-xl"></i>
-                                </div> -->
                                 <h3 class="text-3xl font-semibold">Natours project</h3>
                                 <p class="mt-4 text-lg leading-relaxed text-gray-600">
                                     As one of the best rated reading specialist institutions in Israel, I knew something had to be done after discovering that the intsitution's website did not reflect the excellence of success they offer. This site was transformed from a static template website into a bespoke, dynamic, 20 page website with a mobile first design, and includes a login system for users to access resources and FAQ's.
@@ -307,42 +385,26 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="relative py-20">
+            </section> -->
+            <!-- <section class="relative py-20">
                 <div class="container mx-auto px-4">
                     <div class="items-center flex flex-wrap">
+                        <div class="w-full md:w-6/12 ml-auto mr-auto px-4">
+                            <a href="https://kriah.com" target="blank">
+                              <img
+                                alt="..."
+                                class="max-w-full rounded-sm shadow-sm"
+                                src="./assets/img/natours.PNG"/>  
+                            </a>
+                        </div>
                         <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
                             <div class="md:pr-12">
-                                <!-- <div class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
-                                    <i class="fas fa-rocket text-xl"></i>
-                                </div> -->
+                                
                                 <h3 class="text-3xl font-semibold">Personal Projects</h3>
                                 <p class="mt-4 text-lg leading-relaxed text-gray-600">
                                     A collection of personal projects using JavaScript, React.js and Sass, including pong game, paint, trello, wedding countdown.
                                 </p>
                                 <ul class="list-none mt-6">
-                                    <!-- <li class="px-5 inline-block">
-                                        <div class="">
-                                            <div class = "text-center">
-                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-500"><i class="fab fa-html5"></i></span>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-gray-600">
-                                                    HTML5
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="px-5 inline-block">
-                                        <div class="">
-                                            <div class = "text-center">
-                                                <span class="text-3xl font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-500 "><i class="fab fa-css3"></i></span>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-gray-600">CSS3</h4>
-                                            </div>
-                                        </div>
-                                    </li> -->
                                     <li class="px-5 inline-block">
                                         <div class="text-center">
                                             <div class = "-ml-16">
@@ -376,17 +438,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="w-full md:w-6/12 ml-auto mr-auto px-4">
-                            <a href="https://kriah.com" target="blank">
-                              <img
-                                alt="..."
-                                class="max-w-full rounded-sm shadow-sm"
-                                src="./assets/img/natours.PNG"/>  
-                            </a>
-                        </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             
             <section class="pt-20 pb-48">
@@ -672,11 +726,5 @@
                 </div> -->
             </div>
         </footer>
-    </body>
-    <script>
-        function toggleNavbar(collapseID) {
-            document.getElementById(collapseID).classList.toggle("hidden");
-            document.getElementById(collapseID).classList.toggle("block");
-        }
-    </script>
+    </body>    
 </html>
