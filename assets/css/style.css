@@ -1,3 +1,11 @@
+.nav-links {
+  transition: all 0.2s;
+}
+
+.nav-links:hover {
+  transform: scale(1.15);
+}
+
 .heading {
   text-transform: uppercase;
   background-image: linear-gradient(to right bottom, #f87171, #818cf8, #34d399);
@@ -18,7 +26,7 @@
 }
 
 .heading-tertiary-link:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   text-shadow: none;
 }
 
@@ -32,7 +40,25 @@
   font-size: 26px;
 }
 
-.composition {
+.heading-secondary-black {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.about-img {
+  height: 100%;
+  filter: opacity(0.8);
+}
+
+.quotes-container {
+  height: 150px;
+}
+
+.quotes {
+  transition: all 1s;
+  font-size: 18px;
+}
+
+/* .composition {
   position: relative;
 }
 
@@ -74,6 +100,10 @@
 }
 .composition__photo--p3:hover {
   outline: 1rem solid #818cf8;
+} */
+
+.icon-circle {
+  background-image: linear-gradient(to right bottom, #f87171, #818cf8, #34d399);
 }
 
 .composition:hover .composition__photo:not(:hover) {
@@ -96,4 +126,72 @@
 .project-img--2:hover {
   outline: 1rem solid rgba(248, 113, 113, 0.7);
   outline: 1rem solid rgba(52, 211, 153, 0.7);
+}
+
+.circle-img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+
+.circle-img--1 {
+  background: url("../img/kanban.png") center/cover no-repeat;
+}
+
+.circle-img--2 {
+  background: url("../img/countdown.jfif") center/cover no-repeat;
+}
+
+.circle-img--3 {
+  background: url("../img/paint.png") center/cover no-repeat;
+}
+
+.circle-img--4 {
+  background: url("../img/tip.png") center/cover no-repeat;
+}
+
+.cta-btn,
+.cta-btn:visited {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s ease-out;
+  position: relative;
+  background-image: linear-gradient(to right bottom, #f87171, #818cf8, #34d399);
+  border: 1px solid white;
+  box-shadow: 0 0 23px white;
+}
+
+.cta-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s ease-out;
+  background-image: linear-gradient(to right bottom, #f87171, #818cf8, #34d399);
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  /* box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); */
+  /* box-shadow: 0 0 33px white; */
+  box-shadow: 0 0 33px white;
+}
+
+.cta-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.cta-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
