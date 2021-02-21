@@ -46,7 +46,7 @@
 
 .about-img {
   height: 100%;
-  filter: opacity(0.8);
+  /* filter: opacity(0.9); */
 }
 
 .quotes-container {
@@ -136,19 +136,25 @@
 }
 
 .circle-img--1 {
-  background: url("../img/kanban.png") center/cover no-repeat;
+  background: url("../img/kanban.jpg") center/cover no-repeat;
 }
 
 .circle-img--2 {
-  background: url("../img/countdown.jfif") center/cover no-repeat;
+  background: url("../img/countdown.jpg") center/cover no-repeat;
 }
 
 .circle-img--3 {
-  background: url("../img/paint.png") center/cover no-repeat;
+  background: url("../img/paint.jpg") center/cover no-repeat;
 }
 
 .circle-img--4 {
-  background: url("../img/tip.png") center/cover no-repeat;
+  background: url("../img/tip.jpg") center/cover no-repeat;
+}
+.circle-img--5 {
+  background: url("../img/pong.jpg") left/cover no-repeat;
+}
+.circle-img--6 {
+  background: url("../img/contacts.jpg") center/cover no-repeat;
 }
 
 .cta-btn,
