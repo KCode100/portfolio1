@@ -156,6 +156,9 @@
 .circle-img--6 {
   background: url("../img/contacts.jpg") center/cover no-repeat;
 }
+.circle-img--7 {
+  background: url("../img/bookmark-flat.png") center/cover no-repeat;
+}
 
 .cta-btn,
 .cta-btn:visited {
