@@ -136,25 +136,25 @@
 }
 
 .circle-img--1 {
-  background: url("../img/kanban.jpg") center/cover no-repeat;
+  background: url("../img/kanban.jpeg") center/cover no-repeat;
 }
 
 .circle-img--2 {
-  background: url("../img/countdown.jpg") center/cover no-repeat;
+  background: url("../img/countdown.jpeg") center/cover no-repeat;
 }
 
 .circle-img--3 {
-  background: url("../img/paint.jpg") center/cover no-repeat;
+  background: url("../img/paint.jpeg") center/cover no-repeat;
 }
 
 .circle-img--4 {
-  background: url("../img/tip.jpg") center/cover no-repeat;
+  background: url("../img/tip.jpeg") center/cover no-repeat;
 }
 .circle-img--5 {
-  background: url("../img/pong.jpg") left/cover no-repeat;
+  background: url("../img/pong.jpeg") left/cover no-repeat;
 }
 .circle-img--6 {
-  background: url("../img/contacts.jpg") center/cover no-repeat;
+  background: url("../img/contacts.jpeg") center/cover no-repeat;
 }
 .circle-img--7 {
   background: url("../img/bookmark-flat.png") center/cover no-repeat;
