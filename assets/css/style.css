@@ -136,7 +136,7 @@
 }
 
 .circle-img--1 {
-  background: url("../img/kanban.jpeg") center/cover no-repeat;
+  background: url("../img/memory.jpg") center/cover no-repeat;
 }
 
 .circle-img--2 {
@@ -144,11 +144,11 @@
 }
 
 .circle-img--3 {
-  background: url("../img/paint.jpeg") center/cover no-repeat;
+  background: url("../img/Lorem-Ipsum.png") center/cover no-repeat;
 }
 
 .circle-img--4 {
-  background: url("../img/tip.jpeg") center/cover no-repeat;
+  background: url("../img/numbers2.jpg") center/cover no-repeat;
 }
 .circle-img--5 {
   background: url("../img/pong.jpeg") left/cover no-repeat;
